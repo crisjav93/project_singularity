@@ -38,9 +38,10 @@
     
 }
 
-.header__nav{
+.header__nav {
     color: blue;
-    background-color: black;
+    display: contents;
+    font-size: 25px;
 }
 
 /* COMPLEMENTOS NAVBAR */
@@ -68,6 +69,7 @@ a {
 /* HEADER */
 
 
+
 /* MAIN */
 
 main {
@@ -76,17 +78,18 @@ main {
     background-position-y: -90px;
     display: grid;
     grid-template-rows: 100px 1fr 1fr 75px;
-    grid-template-columns: 6% auto auto;
-    grid-template-areas: "hero hero hero"
-        "nav spot__1 spot__1"
-        "nav spot__2 spot__2"
-        "footer footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "hero hero"
+        "spot__1 spot__1"
+        "spot__2 spot__2"
+        "footer footer";
 }
 
-.main__titulo{
-    background-color: #ffffff00;
-    text-align: left;
-    padding: 0.5rem;
+.hero__title {
+    font-size: 2.2rem;
+    color: white;
+    padding: 1rem;
+    display: inline-block;
 }
 
 /* MAIN FIN */
@@ -131,9 +134,14 @@ section#spot__2 {
 
 /* FIN SPOT__2 */
 
-nav{
+/*nav {
     grid-area: nav;
-}
+    background-color: transparent;
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+
+}*/
 
 /* Clases Utilitarias*/
 
