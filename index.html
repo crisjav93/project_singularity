@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang ="en" class="animate__animated animate__fadeIn">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	<link rel="shortuc icon" href="../img/favicom.png">
     <link rel="stylesheet" href="estilos/css/styles.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body>
+<body class="background">
+    
     <header class="header">
         <a href="#"><img src="./img/logo-singularity.png" alt="Logo" class="header__logo"></a>
         <nav class="header__nav">
@@ -32,33 +35,54 @@
         </div>
     </header>
     <main class="main">
-        <div class="main__background"></div>
-            <section class="hero">
-                <h2 class="hero__title">BE READY FOR THE SINGULARITY</h2>
-            </section>
-            <section id="spot__1">spot1
-            </section>
-            <section id="spot__2">spot2
-            </section>
-            <!--
-            <nav class="slidebar">
-                <ul class="slidebar__ul">
-                    <li class="nav__home">
-                        <a href="#"><img src="./img/icons/home.png" alt="mdo" width="52" height="52" class="rounded-circle">Home</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./img/icons/project.png" alt="mdo" width="52" height="52" >Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./img/icons/propuestas.png" alt="mdo" width="52" height="52" >Propuestas</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./img/icons/nosotros.png" alt="mdo" width="52" height="52" >Nosotros</a>
-                    </li>
-                </ul>
-                
-            </nav>-->
+        <div class="row">
+            <h1 class="hero__title text-center">BE READY FOR THE SINGULARITY</h1>
+        </div>
+        <div class=" row hero__slogan text-center">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloribus iste deserunt eos quis, sed assumenda praesentium neque? Libero praesentium, fugiat voluptatum numquam perferendis quos.</p>
+        </div>
+        <section class="spot row">
+            <div class="col-sm-6 col-12 spot1"></div>
+            <div class="col-sm-6 col-12 spot2">
+                <div class="spot__texto d-flex align-items-center justify-content-center">
+                    <h2>TITULO</h2>
+                    <p class='w-50 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam accusantium veritatis officia delectus nihil non inventore debitis ullam aspernatur?</p>
+                    <a class="btn btn-outline-warning" href="./vistas/proyectos.html">Proyectos</a>
+                </div>
+            </div>
+        </section>
+        <section class="spot row">
+            <div class="col-sm-6 col-12 spot2">
+                <div class="spot__texto d-flex align-items-center justify-content-center">
+                    <h2>TITULO</h2>
+                    <p class='w-50 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam accusantium veritatis officia delectus nihil non inventore debitis ullam aspernatur?</p>
+                    <a class="btn btn-outline-warning" href="./vistas/proyectos.html">Proyectos</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 spot3"></div>
+        </section>
+        <!--
+        <nav class="slidebar">
+            <ul class="slidebar__ul">
+                <li class="nav__home">
+                    <a href="#"><img src="./img/icons/home.png" alt="mdo" width="52" height="52" class="rounded-circle">Home</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/icons/project.png" alt="mdo" width="52" height="52" >Proyectos</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/icons/propuestas.png" alt="mdo" width="52" height="52" >Propuestas</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/icons/nosotros.png" alt="mdo" width="52" height="52" >Nosotros</a>
+                </li>
+            </ul>
+            
+        </nav>-->
     </main>
+    <footer>
+
+    </footer>
     <script>
 		AOS.init();
 	</script>

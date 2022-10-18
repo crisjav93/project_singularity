@@ -4,22 +4,26 @@
     box-sizing: border-box;
 }
 
+.background{
+    background-color: black;
+    background-image: url("../../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
 :root{
     font-size: 16px;
 }
 /*HEADER*/
 
 .header {
-    background-color: black;
-    background-image: url("../../img/fondo.jpg");
-    background-position-x: left;
-    background-repeat: no-repeat;
-    background-position-y: top;
     display: flex;
-    height: 90px;
     align-items: flex-start;
     padding: 1rem;
     justify-content: space-between;
+
 }
 
 
@@ -73,31 +77,43 @@ a {
 /* MAIN */
 
 main {
-    height: 900px;
-    background-image: url(../../img/fondo.jpg);
-    background-position-y: -90px;
-    display: grid;
-    grid-template-rows: 100px 1fr 1fr 75px;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "hero hero"
-        "spot__1 spot__1"
-        "spot__2 spot__2"
-        "footer footer";
+    height: 990px;
 }
 
-.hero__title {
-    font-size: 2.2rem;
-    color: white;
-    padding: 1rem;
-    display: inline-block;
+.spot{
+    height: 50vh;
+
 }
 
+.spot1 {
+    background-image: url(../../img/spot4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.spot2{
+    background-color: rgba(0, 0, 0, 0.565);
+}
+
+.spot3 {
+    background-image: url(../../img/spot3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    background-position: center;
+}
+
+
+.spot__texto{
+    height: 100%;
+    flex-direction: column;
+}
 /* MAIN FIN */
 
 /* HERO */
 
 .hero{
-    grid-area: hero;
 }
 
 .hero__wrapper{
@@ -114,14 +130,17 @@ main {
     font-size: 2rem;
     color: white;
     padding: 1rem;
-    display: inline-block;
+}
+
+.hero__slogan{
+    margin: 2rem;
+    height: 25px;
 }
 /*hero fin*/
 
 /* SPOT__1 */
 
 section#spot__1 {
-    grid-area: spot__1;
 }
 
 /* FIN SPOT__1 */
@@ -129,7 +148,6 @@ section#spot__1 {
 /* SPOT__2 */
 
 section#spot__2 {
-    grid-area: spot__2;
 }
 
 /* FIN SPOT__2 */
@@ -145,7 +163,7 @@ section#spot__2 {
 
 /* Clases Utilitarias*/
 
-.btn {
+/*.btn {
     color: rgb(45 5 100 / 95%);
     font-size: 1.2rem;
     padding: 1rem;
@@ -153,46 +171,9 @@ section#spot__2 {
     width: 223px;
     border-radius: 6px;
     position: relative;
-}
+}*/
 
 /* Fin Clases Utilitarias*/
-
-
-
-
-
-h1{
-    color: white;
-    font-size: 48px;
-    text-align: center;
-    background-color: black;
-}
-
-article{
-    color: rgb(21, 21, 186);
-}
-
-section p {
-    color: brown;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: transparent;
-}
-.color-purple{
-    color:purple;
-    }
-
-.px24{
-    font-size: 24px !important;    
-}
-
-#super-parrafo{
-    color:green;
-    font-size: 48px;
-}
-
-ul{
-    list-style-type: square ;
-}
 
 /*NOSOTROS*/
 
@@ -247,3 +228,37 @@ ul{
 .infocard__desc {
     height: 166px;
 }
+
+/* footer */
+footer{
+    background-color: grey;
+}
+
+/* footer */
+
+/* ESTILOS MOBILE */
+@media screen and (min-width: 768px) {
+	.main {
+        background-color: red;
+        border: green;
+    }
+    .main {
+    	/*border: 4px solid yellow;*/
+    	background-color: #ffffff00;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn__nav{
+        display: none;
+    }
+
+	.main {
+        background-color: green;
+    }
+    .main {
+    	border: 4px solid red;
+    	background-color: #ffffff00;
+    }
+}
+
