@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.row {
+    --bs-gutter-x: auto;
+}
+
 .background__home{
     background-color: black;
     background-image: url("../../img/fondo.jpg");
@@ -85,19 +89,19 @@ a {
 /* MAIN */
 
 main {
-    height: 990px;
+    height: auto;
 }
 
-.spot{
-    height: 50vh;
 
-}
 
 .spot1 {
     background-image: url(../../img/spot4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    background-blend-mode: soft-light;
+    background-color: #0f0e0e40;
+    height: 50vh;
 }
 
 .spot2{
@@ -110,6 +114,9 @@ main {
     background-size: cover;
     color: #FFFFFF;
     background-position: center;
+    background-blend-mode: soft-light;
+    background-color: #0f0e0e40;
+    height: 50vh;
 }
 
 .spot__contact{
@@ -117,11 +124,15 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    background-blend-mode: soft-light;
+    background-color: #0f0e0e8c;
+
 }
 
-.spot__texto{
+.spot__texto {
     height: 100%;
     flex-direction: column;
+    padding: 1rem;
 }
 /* MAIN FIN */
 
@@ -144,51 +155,36 @@ main {
     font-size: 3rem;
     color: white;
     padding: 1rem;
+    align-self: center;
+    text-align: center;
+    height: 25vh;
 }
 
-.hero__slogan{
+.hero__title-contact {
+    font-size: 3rem;
+    color: white;
+    padding: 1rem;
+    align-self: center;
+    text-align: center;
+}
+
+.hero__slogan {
     margin: 1rem;
+    height: 25vh;
+    text-align: center;
+}
+
+.hero__slogan-contact{
+    margin: 1rem;
+    text-align: center;
 }
 /*hero fin*/
-
-/* SPOT__1 */
-
-section#spot__1 {
-}
-
-/* FIN SPOT__1 */
-
-/* SPOT__2 */
-
-section#spot__2 {
-}
-
-/* FIN SPOT__2 */
-
-/*nav {
-    grid-area: nav;
-    background-color: transparent;
-    flex-direction: column;
-    display: flex;
-    box-sizing: border-box;
-
-}*/
 
 /* Clases Utilitarias*/
 
 .btn__nav{
     text-decoration: none;
 }
-
-/*.btn {
-    color: rgb(45 5 100 / 95%);
-    font-size: 1.2rem;
-    padding: 1rem;
-    background-color: #767676a8;
-    width: 223px;
-    border-radius: 6px;
-    position: relative;
-}*/
 
 /* Fin Clases Utilitarias*/
 
@@ -216,42 +212,13 @@ section#spot__2 {
     width:100%
 }
 
-/*INFOCARD*/
-
-.info {
-    background-color: rgb(0, 0, 0);
-    bottom: 0px;
-    color: black;
-    padding: 0rem 1rem;
-    gap: 1rem;
-    display: flex;
-}
-
-.infocard {
-    color: rgb(61, 33, 153);
-    overflow: hidden;
-    background-color: black;
-    padding: 1rem 2rem;
-}
-
-.infocard__img{
-    width: 100%;
-}
-
-.infocard__titulo {
-    background-color: black;
-}
-
-.infocard__desc {
-    height: 166px;
-}
 /* register */
 
 .user__pass{
     display: block;
 }
 
-/* register */
+/* register fin */
 
 .register{
     margin: 1rem;
@@ -260,10 +227,25 @@ section#spot__2 {
 
 /* footer */
 footer{
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
 }
 
-/* footer */
+.text-muted {
+    --bs-text-opacity: 1;
+    color: white!important;
+    
+}
+
+.ms-3 {
+    margin-right: 1rem!important;
+}
+
+.ms-4 {
+    align-items: center;
+}
+
+/* footer fin */
 
 /* ESTILOS MOBILE */
 @media screen and (min-width: 768px) {
@@ -274,6 +256,11 @@ footer{
     .main {
     	background-color: #ffffff00;
     }
+    .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    justify-content: center!important;
+}
 }
 
 @media screen and (max-width: 574px) {
@@ -289,5 +276,17 @@ footer{
     	border: 4px solid red;
     	background-color: #ffffff00;
     }
+
+    .h3, h3 {
+        font-size: calc(1.3rem + .6vw);
+        align-self: center;
+    }
+
+    .hero__slogan {
+        margin: 1rem;
+        height: 60vh;
+        text-align: center;
+    }
 }
+
 
