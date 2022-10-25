@@ -4,6 +4,89 @@
     box-sizing: border-box;
 }
 
+/* Profile Page */
+
+.container__profile{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 2fr 4fr 4fr;
+    grid-template-rows: 1fr 2fr 3fr 1fr;
+    grid-template-areas: 
+    "sidebar nav nav"
+    "sidebar content1 content2"
+    "sidebar content1 content3"
+    "footer footer footer";
+    grid-gap:0.5rem
+}
+
+nav{
+    display: grid;
+    background-color:grey;
+    grid-area: nav;
+}
+
+.sidebar__profile {
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+}
+
+#content1 {
+    background-color: white;
+    grid-area: content1;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgbx {
+    align-items: center;
+    width: 33%;
+    flex-direction: row-reverse;
+}
+.imgbx img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 45px;
+}
+
+.profile__info{
+    background: gray;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width:auto !important;
+}
+
+#content2{
+    background-color:blue;
+    grid-area: content2;
+}
+
+#content3{
+    background-color:brown;
+    grid-area:content3;
+}
+
+footer{
+    background-color:#1de9b6;
+    grid-area: footer;
+}
+
+
+
+
+/* Profile Page*/
+
+
+
+
 .row {
     --bs-gutter-x: auto;
 }
@@ -26,6 +109,10 @@
     color: #FFFFFF;
 }
 
+.profile__body{
+    background-color: grey;
+}
+
 :root{
     font-size: 16px;
 }
@@ -43,7 +130,7 @@
 
 .header__logo {
     max-width: 150px;
-    display: flex;
+    display: inline-block;
 }
 
 
@@ -249,13 +336,7 @@ footer{
 
 /* ESTILOS MOBILE */
 @media screen and (min-width: 768px) {
-	.main {
-        background-color: red;
-        border: green;
-    }
-    .main {
-    	background-color: #ffffff00;
-    }
+    
     .col-md-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -267,16 +348,6 @@ footer{
     .btn__nav{
         display: none;
     }
-
-    
-	.main {
-        background-color: green;
-    }
-    .main {
-    	border: 4px solid red;
-    	background-color: #ffffff00;
-    }
-
     .h3, h3 {
         font-size: calc(1.3rem + .6vw);
         align-self: center;
@@ -289,4 +360,16 @@ footer{
     }
 }
 
-
+@media only screen and (max-width:574px) {
+    .container__profile{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 2fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+        "nav"
+        "sidebar"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+}
