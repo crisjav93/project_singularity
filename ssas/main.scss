@@ -1,0 +1,74 @@
+@import "partial/header";
+@import "partial/main_home";
+@import "partial/hero_home";
+@import "partial/mobile";
+@import "partial/footer";
+@import "partial/container_profile";
+@import "partial/info__card";
+@import "partial/backgrounds";
+@import "partial/hero_cotact";
+@import "partial/utilitarias";
+@import "partial/spot_contact";
+
+
+
+
+/* Profile Page */
+
+#content2{
+    background-color:blue;
+    grid-area: content2;
+}
+
+#content3{
+    background-color:brown;
+    grid-area:content3;
+}
+
+.card_prof {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+
+.border{
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+
+    &:hover{
+    border: 1px solid white}}
+
+    .card{
+    background: grey;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: black;
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative}
+
+.card0{
+background: url(../../img/testimonials-1.jpg) center center no-repeat;
+background-size: 300px;
+
+&:hover{
+    background: url(../../img/testimonials-1.jpg) center center no-repeat;
+    background-size: 600px;
+    object-fit: cover;
+}}
+
+    h2{
+    opacity: 1}
+
+    .fa{
+    opacity: 1}

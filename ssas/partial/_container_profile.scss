@@ -1,0 +1,28 @@
+.container__profile{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 2fr 4fr 4fr;
+    grid-template-rows: 1fr 2fr 3fr 1fr;
+    grid-template-areas: 
+    "sidebar nav nav"
+    "sidebar info__card content2"
+    "sidebar info__card content3"
+    "footer footer footer";
+    grid-gap:0.5rem;
+    nav{
+        display: grid;
+        background-color:grey;
+        grid-area: nav;
+    }
+    .lab__logo{
+        max-width: 150px;
+        display: inline-block;
+    }
+    .sidebar__profile {
+        background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+        grid-area: sidebar;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
