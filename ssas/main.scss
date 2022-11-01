@@ -14,6 +14,11 @@
 
 
 /* Profile Page */
+nav{
+    display: grid;
+    background-color:grey;
+    grid-area: nav;
+}
 
 #content2{
     background-color:blue;
