@@ -28,11 +28,13 @@ nav{
 
 #content3{
     grid-area:content3;
+    background: #ffffff57;
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 .work_list {
     text-align: center;
-    background: #0000004a;
     --bs-list-group-item-padding-x: 1rem;
     --bs-list-group-item-padding-y: 0.5rem;
     --bs-list-group-action-color: #495057;

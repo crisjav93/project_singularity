@@ -9,7 +9,8 @@
     "sidebar info__card content3"
     "footer footer footer";
     grid-gap:0.5rem;
-    nav{
+    background: url(../../img/fondo.jpg);
+        nav{
         display: grid;
         background-color:grey;
         grid-area: nav;
