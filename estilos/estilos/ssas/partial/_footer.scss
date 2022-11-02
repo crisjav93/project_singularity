@@ -1,0 +1,17 @@
+footer{
+    background-color: black!important;
+    width: 100%;
+    .footer__icons {
+        margin-right: 1rem!important;
+    }
+    
+    .logo__footer {
+        align-items: center;
+        margin-left: 0rem!important;
+    }
+    .text-muted {
+        --bs-text-opacity: 1;
+        color: white!important;
+        
+    }
+}

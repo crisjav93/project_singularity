@@ -1,10 +1,25 @@
 @media screen and (min-width: 768px) {
     
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.3%;
+        padding-left: 0.5rem;
+    }
+    .col-sm-6 {
+        flex: 0 0 auto;
+        padding-left: 0.5rem;
+        width: 50%;
+    }
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        padding-left: 0.5rem;
+    }
     .col-md-4 {
-    flex: 0 0 auto;
-    width: 33.33333333%;
-    justify-content: center!important;
-}
+        flex: 0 0 auto;
+        width: auto;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -22,7 +37,6 @@
         text-align: center;
     }
     .icon{
-        margin-right: 1rem;
         margin-top: 1rem!important;
     }
     .mb-auto {
@@ -42,8 +56,8 @@
     grid-template-areas: 
         "nav"
         "sidebar"
-        "content1"
-        "content2"
+        "info__card"
+        "skills"
         "content3"
         "footer"!important;
     }

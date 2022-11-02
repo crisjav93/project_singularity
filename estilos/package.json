@@ -1,0 +1,26 @@
+{
+  "name": "entrega-final",
+  "version": "1.0.0",
+  "description": "Entrega Proyecto Coder DW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss estilos/ssas/main.scss estilos/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisjav93/project_singularity.git"
+  },
+  "author": "Cristian Nunes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crisjav93/project_singularity/issues"
+  },
+  "homepage": "https://github.com/crisjav93/project_singularity#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
