@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link rel="shortuc icon" href="../img/favicom.png">
     <link rel="stylesheet" href="../estilos/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
-<body>
+<body class="profile__body">
     <div class="container__profile">
-        <nav class="navbar navbar-expand-lg bg-dark col-12">
-            <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">Navbar</a>
-            </div>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <a class="btn__nav" href="#">Inbox</a>
+            <a class="btn__nav" href="#">Following</a>
+            <a class="btn__nav" href="#">Followers</a>
+            <a class="btn__nav" href="#">Your Projects</a>
         </nav>
         <sidebar class="sidebar__profile col-sm-12">
             <div class="text-bg-dark">
@@ -26,34 +29,40 @@
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-                    Home
+                    <a href="./nosotros.html" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use href="./nosotros.html"></use></svg>
+                    Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="./proyectos.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use href="./proyectos.html"></use></svg>
+                    Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="./propuesta_informativa.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use href="./propuesta_informativa.html"></use></svg>
+                    Proposal
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                    Dashboard
+                    <svg class="bi pe-none me-2" width="16" height="16"><use href="#"></use></svg>
+                    Edit Profile
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                    Orders
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-                    Products
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                    Customers
-                    </a>
+                    <div class="btn-group dropend">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Social
+                        </button>                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Inbox</a></li>
+                            <li><a class="dropdown-item" href="#">Following</a></li>
+                            <li><a class="dropdown-item" href="#">Followers</a></li>
+                            <li><a class="dropdown-item" href="#">Your Projects</a></li>
+                        </ul>
+                    </div>
                 </li>
                 </ul>
                 <hr>
@@ -66,65 +75,100 @@
                     </div>
                 </div>
             </div>
-            <div class="user__data align-items-center">
-                <p class="profile__info col-md-12 text-center">Cristian Javier Nunes</p>
-            </div>
-            <section class="personal__data col-sm-12 text-center>">
-                <div>
-                    <p class="profile__info col-ms-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, soluta a veritatis dolore voluptate dignissimos.</p>
+            <section class="personal__data">
+                <div class="name">
+                    <a href="https://codepen.io/AlbertFeynman/" target="_blank">Albert Feynman</a>
+                    <h6 title="Followers"><i class="fas fa-users"></i> <span class="followers">90</span></h6>
                 </div>
-                <div>
-                    <p class="profile__info col-ms-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, soluta a veritatis dolore voluptate dignissimos.</p>
+                <div class="button">
+                    <a href="#" class="btn btn-outline-warning" onmousedown="follow();">Follow <i class="fas fa-user-plus"></i></a>
+                </div>
+                <div class="ds-info">
+                    <div class="ds pens">
+                        <h6 title="Number of pens created by the user">Pens <i class="fas fa-edit"></i></h6>
+                        <p>29</p>
+                    </div>
+                <div class="ds projects">
+                    <h6 title="Number of projects created by the user">Projects <i class="fas fa-project-diagram"></i></h6>
+                    <p>0</p>
+                </div>
+                    <div class="ds posts">
+                        <h6 title="Number of posts">Posts <i class="fas fa-comments"></i></h6>
+                        <p>0</p>
+                    </div>
                 </div>
             </section>
+            <div class='bioContent'>
+                <div class="contact_data">
+                    <p>Email:  example@example.com</p>
+                    <p>Mobil:  +54 112233445566</p>
+                </div>
+                <p class='biodesc'>About Me:</p>
+                <p class='biodesc'>Innovative tech mind with 15 years of experience working as a computer programmer. Capable of working with a variety of technology and software solutions, and managing databases. Valuable team member who has experience diagnosing problems and developing solutions. Extensive expertise in networking systems and working with mainframe computers. Talented leader with unique ideas and a history of successful contributions in the field.  
+                </p>
+            </div>
         </div>
+        
+        <!--<div class="user__data align-items-center">
+            <p class="profile__info col-md-12 text-center">Cristian Javier Nunes</p>
+        </div>
+        <section class="personal__data col-sm-12 text-center>">
+            <div>
+                <p class="profile__info col-ms-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, soluta a veritatis dolore voluptate dignissimos.</p>
+            </div>
+            <div>
+                <p class="profile__info col-ms-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, soluta a veritatis dolore voluptate dignissimos.</p>
+            </div>
+        </section> -->
+
         <div id="contentContainer">
+            <h2 style="color:#fdfdfd">Skills</h2>
+
             <div class="skill_box">
-                <h2>Skills</h2>
                 <div class="skillBar">
-                <h4>HTML</h4>
+                <h4 style="color:#fdfdfd">HTML</h4>
                 <div class="skillBarContainer">
                     <div class="skillBarValue value-90"></div>
                 </div>
                 </div>
             
                 <div class="skillBar">
-                <h4>CSS3</h4>
+                <h4 style="color:#fdfdfd">CSS3</h4>
                 <div class="skillBarContainer">
                     <div class="skillBarValue value-80"></div>
                 </div>
                 </div>
                 
                 <div class="skillBar">
-                <h4>SASS</h4>
+                <h4 style="color:#fdfdfd">SASS</h4>
                 <div class="skillBarContainer">
                     <div class="skillBarValue value-90"></div>
                 </div>
                 </div>
             
                 <div class="skillBar">
-                <h4>jQuery</h4>
+                <h4 style="color:#fdfdfd">jQuery</h4>
                 <div class="skillBarContainer">
                     <div class="skillBarValue value-70"></div>
                 </div>
                 </div>
                 
                 <div class="skillBar">
-                <h4>JavaScript</h4>
+                <h4 style="color:#fdfdfd">JavaScript</h4>
                 <div class="skillBarContainer">
                     <div class="skillBarValue value-20"></div>
                 </div>
                 </div>
             
                 <div class="skillBar">
-                <h4>PHP</h4>
+                <h4 style="color:#fdfdfd">PHP</h4>
                 <div class="skillBarContainer">
                     <div class="skillBarValue value-40"></div>
                 </div>
                 </div>
                 
                 <div class="skillBar">
-                <h4>WordPress</h4>
+                <h4 style="color:#fdfdfd">WordPress</h4>
                 <div class="skillBarContainer">
                     <div class="skillBarValue value-80"></div>
                 </div>
@@ -132,13 +176,16 @@
             </div>
         </div>
         <div id="content3">
-            <h2>My Projects</h2>
-            <ul class="work_list">
-                <li class="list-group-item"><button type="button" class="btn btn-secondary">Project in progress, visit our site later</button></li>
-                <li class="list-group-item"><button type="button" class="btn btn-secondary">Project in progress, visit our site later</button></li>
-                <li class="list-group-item"><button type="button" class="btn btn-secondary">Project in progress, visit our site later</button></li>
-                <li class="list-group-item"><button type="button" class="btn btn-secondary">Project in progress, visit our site later</button></li>
-                <li class="list-group-item"><button type="button" class="btn btn-secondary">Project in progress, visit our site later</button></li>
+            <div class="list_box">
+                <h2 style="color:#fdfdfd">My Projects</h2>
+                <ul class="work_list">
+                    <li class="list-group-item"><button type="button" class="btn btn-outline-warning">Project in progress, visit our site later</button></li>
+                    <li class="list-group-item"><button type="button" class="btn btn-outline-warning">Project in progress, visit our site later</button></li>
+                    <li class="list-group-item"><button type="button" class="btn btn-outline-warning">Project in progress, visit our site later</button></li>
+                    <li class="list-group-item"><button type="button" class="btn btn-outline-warning">Project in progress, visit our site later</button></li>
+                    <li class="list-group-item"><button type="button" class="btn btn-outline-warning">Project in progress, visit our site later</button></li>
+                </ul>
+            </div>
         </div>
     <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top">
         <div class="col-md-4 d-flex align-items-center"> 

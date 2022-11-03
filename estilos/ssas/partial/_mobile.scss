@@ -1,4 +1,5 @@
 @media screen and (min-width: 768px) {
+    .btn-group, .btn-group-vertical{display: none !important}
     
     .col-sm-4 {
         flex: 0 0 auto;
@@ -51,10 +52,10 @@
 
 @media only screen and (max-width:425px) {
     .container__profile{
+        .navbar{display:none !important};
     grid-template-columns: 1fr !important;
-    grid-template-rows: 0.5fr 1fr 2fr 1fr 1fr 1fr !important;
+    grid-template-rows: 0.25fr 1fr 0.5fr 0.5fr 0.25fr !important;
     grid-template-areas: 
-        "nav"
         "sidebar"
         "info__card"
         "skills"

@@ -1,7 +1,6 @@
 div#contentContainer {
-    display: flex;
     justify-content: space-evenly;
-    background: #ffffff57;
+    background: #ffffff05;
     border-radius: 20px;
     padding: 1rem;
 
@@ -9,7 +8,6 @@ div#contentContainer {
 
 .contentContainer {
     grid-area: content2;
-    display: flex;
     justify-content: space-evenly;
     padding:20px;
     max-width:350px;
@@ -20,7 +18,11 @@ div#contentContainer {
 }
 
 .skill_box {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     width: 75%;
+
 }
 
 .skillBar {
@@ -43,7 +45,7 @@ div#contentContainer {
 .skillBarValue {
     height: 1em;
     float: left;
-    background: #808080;
+    background: #ffc107;
 }
 
 .value-00  { width: 0;    }
@@ -90,3 +92,4 @@ div#contentContainer {
     -o-animation: slideIn 2s;
     animation: slideIn 2s;
 }
+

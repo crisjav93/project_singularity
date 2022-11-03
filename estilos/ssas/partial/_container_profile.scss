@@ -1,6 +1,6 @@
 .container__profile{
     display:grid;
-    height:100vh;
+    height:100%;
     grid-template-columns: 2fr 4fr 4fr;
     grid-template-rows: 1fr 2fr 3fr 1fr;
     grid-template-areas: 
@@ -9,11 +9,12 @@
     "sidebar info__card content3"
     "footer footer footer";
     grid-gap:0.5rem;
-    background: url(../../img/fondo.jpg);
+    background: linear-gradient(174deg, rgba(14,19,22,1) 0%, rgba(70,82,94,1) 100%);
+    background-repeat: no-repeat;
         nav{
-        display: grid;
-        background-color:grey;
         grid-area: nav;
+        display:flex;
+        justify-content: space-around;
     }
     .lab__logo{
     max-width: 150px;
@@ -27,3 +28,9 @@
     }
 }
 
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    margin-left: 42px;
+}

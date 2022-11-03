@@ -10,42 +10,9 @@
 @import "partial/utilitarias";
 @import "partial/spot_contact";
 @import "partial/skillbar";
+@import "partial/worklist";
 
 
 
 
-/* Profile Page */
-nav{
-    display: grid;
-    background-color:grey;
-    grid-area: nav;
-}
 
-/*#content2{
-    background-color:blue;
-    grid-area: content2;
-}*/
-
-#content3{
-    grid-area:content3;
-    background: #ffffff57;
-    border-radius: 20px;
-    padding: 1rem;
-}
-
-.work_list {
-    text-align: center;
-    --bs-list-group-item-padding-x: 1rem;
-    --bs-list-group-item-padding-y: 0.5rem;
-    --bs-list-group-action-color: #495057;
-    --bs-list-group-action-hover-color: #495057;
-    --bs-list-group-action-hover-bg: #f8f9fa;
-    --bs-list-group-action-active-color: #212529;
-    --bs-list-group-action-active-bg: #e9ecef;
-    --bs-list-group-disabled-color: #6c757d;
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    padding-bottom: 1rem;
-}
