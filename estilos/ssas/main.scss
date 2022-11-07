@@ -12,7 +12,73 @@
 @import "partial/skillbar";
 @import "partial/worklist";
 
-
-
-
-
+.Proposal{
+    display: block;
+    .first_section{
+        max-width: 1260px;
+        padding-right: 30px;
+        padding-left: 30px;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        .img_block{
+            margin-right: 20px;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 100%;
+            -ms-flex: 0 100%;
+            flex: 0 100%;
+            .img_toppost{
+                position: relative;
+                height: 420px;
+                flex-direction: column;
+                justify-content: center;
+                }
+                .img-circule-01{
+                    border-radius: 50%;
+                    position:absolute;
+                    left: 251px;
+                    top: -90px;
+                    width: 300px;
+                    height: 300px;
+                }
+                .img-circule-02{
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -30px;
+                    width: 290px;
+                    height: 290px;
+                    left: 50px;
+                }
+                .img-circule-03{
+                    border-radius: 50%;
+                    position:absolute;
+                    left: 220px;
+                    top: 125px;
+                    width: 260px;
+                    height: 260px;
+                }
+        }
+}
+    .second_section{
+        width: 100%;
+        .second_section--post{
+            display:flex;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 50px;
+            .img-circule-04{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+            }
+            .second_section--text{
+                margin-left: 20px;
+            }
+        }
+    }
+}
