@@ -12,61 +12,61 @@
 @import "partial/skillbar";
 @import "partial/worklist";
 
-.Proposal{
+
+
+
+
+
+.proposal{
     display: block;
     .first_section{
-        max-width: 1260px;
-        padding-right: 30px;
-        padding-left: 30px;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        .first_section--text{
+            display: flex;
+            flex-direction: column;
+            max-width:390px;
+            
+        }
+        }
+        }
         .img_block{
             margin-right: 20px;
-            -webkit-box-flex: 0;
-            -webkit-flex: 0 100%;
-            -ms-flex: 0 100%;
-            flex: 0 100%;
             .img_toppost{
                 position: relative;
-                height: 420px;
                 flex-direction: column;
                 justify-content: center;
                 }
-                .img-circule-01{
-                    border-radius: 50%;
-                    position:absolute;
-                    left: 251px;
-                    top: -90px;
-                    width: 300px;
-                    height: 300px;
+                .circles{
+                    width: 100%;
                 }
-                .img-circule-02{
-                    border-radius: 50%;
-                    position: absolute;
-                    top: -30px;
-                    width: 290px;
-                    height: 290px;
-                    left: 50px;
-                }
-                .img-circule-03{
-                    border-radius: 50%;
-                    position:absolute;
-                    left: 220px;
-                    top: 125px;
-                    width: 260px;
-                    height: 260px;
-                }
-        }
-}
+        } 
     .second_section{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        .img_block_2{
+            margin-right: 20px;
+            .img-circule-05{
+                border-radius: 50%;
+            width: 100%;
+            max-width: 400px;
+            }
+        }
+        .second_section--text{
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+            max-width:390px;
+        }
+    }
+    .third_section{
         width: 100%;
-        .second_section--post{
+        padding-bottom: 2.5rem;
+        .third_section--post{
             display:flex;
             align-items: center !important;
             justify-content: center !important;
@@ -76,9 +76,9 @@
                 height: 300px;
                 border-radius: 50%;
             }
-            .second_section--text{
+            .third_section--text{
                 margin-left: 20px;
+                max-width:390px;
             }
         }
     }
-}
