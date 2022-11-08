@@ -23,7 +23,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
     .btn__nav{
         display: none;
     }
@@ -50,7 +50,7 @@
     
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:767px) {
     .container__profile{
         .navbar{display:none !important};
     grid-template-columns: 1fr !important;
