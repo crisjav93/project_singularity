@@ -62,5 +62,14 @@
         "content3"
         "footer"!important;
     }
+    .first_section {
+        flex-direction: column !important;
+    }
+    .second_section {
+        flex-direction: column !important;
+    }
+    .third_section--post {
+        flex-direction: column !important;
+    }
 }
 
