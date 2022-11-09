@@ -3,26 +3,16 @@
     .first_section{
         display: flex;
         justify-content: center;
+        align-items: center;
         .first_section--text{
-            display: flex;
-            flex-direction: column;
             max-width:390px;
             margin-left: 2.5rem;
             margin-right: 2.5rem;
         }
         }
+        .circles{
+            width: 320px;
         }
-        .img_block{
-            padding: 2.5rem;
-            .img_toppost{
-                position: relative;
-                flex-direction: column;
-                justify-content: center;
-                }
-                .circles{
-                    width: 100%;
-                }
-        } 
     .second_section{
         display: flex;
         flex-direction: row-reverse;
@@ -60,3 +50,4 @@
             }
         }
     }
+}
