@@ -1,24 +1,23 @@
-.background__home{
+@mixin background-img-config {
     background-color: black;
-    background-image: url("../../img/fondo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: #FFFFFF;
 }
 
-.background__projects{
-    background-color: black;
+.background__home{
+    background-image: url("../../img/fondo.jpg");
+    @include background-img-config;
+}
+
+.background__register{
     background-image: url("../../img/fondo2.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #FFFFFF;
+    @include background-img-config;
 }
 
 .background__proposal{
     background: linear-gradient(180deg, rgba(21,14,22,1) 0%, rgba(73,20,73,1) 28%, rgba(107,74,112,1) 51%, rgba(140,64,140,1) 75%, rgba(139,65,129,1) 88%, rgba(179,41,111,1) 100%);
-    /*background-image: url("../../img/proposal/pexels-photo-1274260.jpeg");*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

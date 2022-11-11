@@ -1,26 +1,27 @@
+@mixin spot-config {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: #0f0e0e40;
+    min-height: 50vh;
+    
+}
+
 main{
     height: auto;
     .spot1 {
         background-image: url(../../img/spot4.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
         background-position: center bottom;
-        background-blend-mode: soft-light;
-        background-color: #0f0e0e40;
-        min-height: 50vh;
+        @include spot-config()
     }
     .spot2{
         background-color: rgba(0, 0, 0, 0.565);
     }
     .spot3 {
         background-image: url(../../img/spot3.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #FFFFFF;
         background-position: center;
-        background-blend-mode: soft-light;
-        background-color: #0f0e0e40;
-        min-height: 50vh;
+        color: #FFFFFF;
+        @include spot-config()
     }
     .spot__texto {
         height: 100%;
