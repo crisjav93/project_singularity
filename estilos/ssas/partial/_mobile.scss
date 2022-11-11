@@ -47,7 +47,15 @@
     footer{
         flex-direction: column;
     }
-    
+    .carousel-caption h5 {
+        font-size: 18px !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 25px;
+    }
+    .carousel-img {
+        object-position: bottom;
+    }
 }
 
 @media only screen and (max-width:767px) {
