@@ -6,8 +6,17 @@
     min-height: 50vh;
     
 }
+.header_main{
+    filter: drop-shadow(12px 4px 6px black);
+    backdrop-filter: blur(1.5px);
+    padding-top: 1rem;
+}
 
 main{
+    .spot{
+        display: flex;
+        flex-direction: row;
+    }
     height: auto;
     .spot1 {
         background-image: url(../../img/spot4.jpg);

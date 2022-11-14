@@ -27,6 +27,10 @@
     .btn__nav{
         display: none;
     }
+    .spot{
+        display: flex;
+        flex-direction: column !important;
+    }
     .h3, h3 {
         font-size: calc(1.3rem + .6vw);
         align-self: center;
@@ -58,7 +62,11 @@
     }
     .post{
         margin: 0 2rem 0 2rem !important;
+        .article_share{
+            flex-direction: column !important
+        }
     }
+    
 }
 
 @media only screen and (max-width:767px) {
